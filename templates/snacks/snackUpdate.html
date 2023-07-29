@@ -1,0 +1,18 @@
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title%}Update Snacks{% endblock %}
+
+{% block nav %}
+<li><a href='{% url "update" snack.id  %}' class="nav-link px-2 link-dark">Update Snack</a></li>
+<li><a href='{% url "delete" snack.id %}' class="nav-link px-2 link-dark">Delete Snack</a></li>
+{% endblock %}
+
+{% block content %}
+<h2>Update Snack</h2>
+<form method="post" class="uniForm">
+  {% csrf_token %}
+  {{ form|crispy }}
+  <input type="submit" value="SAVE">
+</form>
+{% endblock content %}
