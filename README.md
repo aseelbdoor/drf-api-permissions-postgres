@@ -1,21 +1,19 @@
-# drf-api-permissions-postgres
-
-# LAB - Class 30
-**Project:** drf-api
+# LAB - Class 31
+**Project:** drf-api-permissions-postgres
 
 **Author:** Aseel Bdoor
 
 ### Links and Resources
 ***back-end server*** Django-admin
 
-**Setup:** `docker run drf-api`
+**Setup:** `drf-api-permissions-postgres`
 
 **PORT -** 8000
 
-**DATABASE_URL -** `db.sqlite3`
+**DATABASE_URL -** `Postgress`
 
 ### How to initialize/run your application
-`python manage.py runserver`
+`docker-compose up`
 
 ### Tests
-no tests
+`docker-compose run web python manage.py test`
